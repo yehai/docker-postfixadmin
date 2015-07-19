@@ -7,11 +7,11 @@
 # -p 8080:8080 \
 # yuanying/postfixadmin
 #
-FROM ubuntu:precise
+FROM ubuntu:trusty 
 MAINTAINER O. Yuanying "yuan-docker@fraction.jp"
 
 ENV DEBIAN_FRONTEND noninteractive
-RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe" > /etc/apt/sources.list
+RUN echo "deb http://archive.ubuntu.com/ubuntu trusty main universe" > /etc/apt/sources.list
 RUN apt-get update
 RUN apt-get -y install python-software-properties
 RUN add-apt-repository -y ppa:ondrej/php5
