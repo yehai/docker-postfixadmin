@@ -40,7 +40,7 @@ $CONF['postfix_admin_path'] = dirname(__FILE__);
 
 // Language config
 // Language files are located in './languages', change as required..
-$CONF['default_language'] = 'ja';
+$CONF['default_language'] = '__REPLACE_LANGUAGE__';
 
 // Database Config
 // mysql = MySQL 3.23 and 4.0, 4.1 or 5
@@ -84,8 +84,8 @@ $CONF['admin_email'] = 'admin@__REPLACE_DOMAIN_NAME__';
 // Mail Server
 // Hostname (FQDN) of your mail server.
 // This is used to send email to Postfix in order to create mailboxes.
-$CONF['smtp_server'] = 'localhost';
-$CONF['smtp_port'] = '25';
+$CONF['smtp_server'] = '__REPLACE_STMP_SERVER__';
+$CONF['smtp_port'] = '__REPLACE_STMP_PORT__';
 
 // Encrypt
 // In what way do you want the passwords to be crypted?
